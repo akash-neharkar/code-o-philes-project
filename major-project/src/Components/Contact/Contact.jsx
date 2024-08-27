@@ -35,6 +35,7 @@ const Contact = () => {
   };
 
   return (
+    <section id="contact">
     <div className="contact">
       <div className="contact-col">
         <h3>
@@ -94,6 +95,7 @@ const Contact = () => {
         <span>{result}</span>
       </div>
     </div>
+    </section>
   );
 };
 

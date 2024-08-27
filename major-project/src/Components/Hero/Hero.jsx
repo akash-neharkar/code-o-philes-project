@@ -4,6 +4,7 @@ import dark_arrow from "../../assets/dark-arrow.png";
 
 const Hero = () => {
   return (
+    <section id="hero">
     <div className="hero container">
       <div className="hero-text">
         <h1>Your Gateway to Smarter Electricity Management.</h1>
@@ -16,6 +17,7 @@ const Hero = () => {
         </button>
       </div>
     </div>
+    </section>
   );
 };
 

@@ -7,6 +7,7 @@ import Footer from '../Footer/Footer';
 import Hero from '../Hero/Hero';
 import Title from '../Title/Title';
 import Contact from '../Contact/Contact';
+import Dashboard from '../Dashboard/Dashboard';
 
 const Layout = () => {
   return (
@@ -16,6 +17,8 @@ const Layout = () => {
         <Hero />
         <SignButton />
         <Outlet />
+        <Title subTitle="Save Electricity" title="Your Consumption Analysis" bgColor="#FFFFFF" />
+        <Dashboard />
         <Title subTitle="Get in touch" title="Contact Us" bgColor="#FFFFFF" />
         <Contact />
         <Footer />
