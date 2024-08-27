@@ -44,23 +44,23 @@ const Contact = () => {
           Feel free to reach out through contact form or find our contact
           information below. Your feedback, questions, and suggestions are
           important to us as we strive to provide exceptional service to our
-          university community.
+          community.
         </p>
         <ul>
           <li>
             {" "}
             <img src={mail_icon} alt="" />
-            Contact@GreatStack.com
+            Electricitytracker@gmail.com
           </li>
           <li>
             {" "}
             <img src={phone_icon} alt="" />
-            1234567890
+            +91 85888 88885
           </li>
           <li>
             {" "}
             <img src={location_icon} alt="" />
-            77 Massachusetts Ave, Cambridge <br /> MA 02139, United States
+            Prakashgad, Plot No. G-9, Bandra (East), Mumbai-400 051
           </li>
         </ul>
       </div>

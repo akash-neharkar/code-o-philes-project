@@ -16,6 +16,7 @@ const Layout = () => {
         <Hero />
         <SignButton />
         <Outlet />
+        <Title subTitle="Get in touch" title="Contact Us" bgColor="#FFFFFF" />
         <Contact />
         <Footer />
       </div>

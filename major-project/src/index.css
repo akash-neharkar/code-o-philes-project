@@ -35,6 +35,24 @@ a {
   justify-content: center;
 }
 
+button {
+  background: #fff;
+  color: rgb(0, 0, 0);
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.25s;
+  /* position: absolute;
+  top: 10px;
+  right: 10px;  */
+}
+
 .btn.dark-btn {
   background: #212ea0;
   color: #fff;
@@ -43,6 +61,16 @@ a {
 .btn img {
   width: 20px;
   margin-left: 10px;
+}
+
+.Signbutton {
+  position: absolute;
+  color: #FFFF;
+  top: 23px;
+  right: 48px;
+  padding: 0 0;
+  position: fixed;
+  z-index: 10;
 }
 
 /* Media queries */

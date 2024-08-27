@@ -10,10 +10,10 @@ import { useAuth } from '@clerk/clerk-react';
 const Navbar = () => {
 
   const navigate = useNavigate();
-    const { isSignedIn, userId } = useAuth();
+  const { isSignedIn, userId } = useAuth();
 
-    console.log("isSignedIn:", isSignedIn);
-    console.log("userId:", userId);
+  console.log("isSignedIn:", isSignedIn);
+  console.log("userId:", userId);
 
   const [sticky, setStickey] = useState(false);
 
@@ -39,20 +39,20 @@ const Navbar = () => {
           </Link>
         </li>
         {isSignedIn && userId === 'user_2hDpsa04NmsUdqC86ukoY9y5FZy' && (
-                        <li>
-                            <NavLink
-                                to="#"
-                                onClick={handleClick}>
-                            </NavLink>
-                        </li>
-                    )}
+          <li>
+            <NavLink
+              to="#"
+              onClick={handleClick}>
+            </NavLink>
+          </li>
+        )}
         <li>
           <Link
             to="contact"
             smooth={true}
             offset={0}
             duration={500}
-            className="btn"
+            className="a"
           >
             Contact us
           </Link>
