@@ -12,9 +12,6 @@ const Hero = () => {
         You can monitor consumption, reduce waste, and optimize energy usage effortlessly.
         Experience seamless energy control with our intuitive monitoring solutions.
         </p>
-        <button className="btn">
-        Track Usage <img src={dark_arrow} alt="" />
-        </button>
       </div>
     </div>
     </section>
