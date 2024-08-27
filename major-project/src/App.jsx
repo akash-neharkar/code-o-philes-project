@@ -1,36 +1,21 @@
 import React from "react";
-import Navbar from "./Components/Navbar/Navbar";
-import Hero from "./Components/Hero/Hero";
-import Programs from "./Components/Programs/Programs";
-import Title from "./Components/Title/Title";
-import About from "./Components/About/About";
-import Campus from "./Components/Campus/Campus";
-import Testimonials from "./Components/Testimonials/Testimonials";
-import Contact from "./Components/Contact/Contact";
-import Footer from "./Components/Footer/Footer";
-import Login from "./Components/Login/Login";
+import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route } from 'react-router-dom';
+import Layout from "./Components/Navbar/Layout";
+import SignButton from "./Components/Navbar/SignButton";
 
-const App = () => {
-  return (
-    <div>
-      <Navbar />
-      <Hero />
-      <div className="container">
-        <Title subTitle="Our Program" title="What we offer" />
-        <Programs />
-        <About />
-        <Title subTitle="Gallery" title="Campus Photos" />
-        <Campus />
-        <Title subTitle="Testimonials" title="What students say" />
-        <Testimonials />
-        <Title subTitle="Login" title="Login to your account" />
-        <Login />
-        <Title subTitle="Contact Us" title="Get in touch" />
-        <Contact />
-        <Footer />
-      </div>
-    </div>
+function App() {
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route path="/" element={<Layout />}>
+        <Route index element={<SignButton />}>
+        </Route>
+      </Route>
+    )
   );
-};
+
+  return (
+    <RouterProvider router={router} />
+  );
+}
 
 export default App;

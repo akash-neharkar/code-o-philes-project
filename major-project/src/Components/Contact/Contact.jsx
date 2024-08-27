@@ -9,12 +9,13 @@ import white_arrow from "../../assets/white-arrow.png";
 const Contact = () => {
   const [result, setResult] = React.useState("");
 
+  //Created using Web3Forms website 
   const onSubmit = async (event) => {
     event.preventDefault();
     setResult("Sending....");
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "35d3c6ce-09c7-4187-937d-37ad0b26b892");
+    formData.append("access_key", "35d3c6ce-09c7-4187-937d-37ad0b26b892"); //Access key for email ID - akashneharkar8587@gmail.com
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
