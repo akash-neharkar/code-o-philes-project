@@ -44,11 +44,11 @@ const Navbar = () => {
         <li>
           <a href="#" onClick={(e) => handleSmoothScroll(e, 'hero', 0)}>Home</a>
         </li>
-        {/* {isSignedIn && userId === 'user_2hDpsa04NmsUdqC86ukoY9y5FZy' && (
-          )} */}
+        {isSignedIn && userId === 'user_2lFhgi7miSF7UcKSC2Bg58GYdFX' && (
           <li>
             <NavLink to="/dashboard">Dashboard</NavLink>
           </li>
+          )}
         <li>
           <a href="#" onClick={(e) => handleSmoothScroll(e, 'contact', 230)}>Contact</a>
         </li>
