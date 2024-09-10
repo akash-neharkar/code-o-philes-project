@@ -8,11 +8,13 @@ import Hero from "./Components/Hero/Hero";
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path="/" element={<Layout />}>
-        <Route index element={<SignButton />} />
-        <Route path="" element={<Hero />} />
+      <>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<SignButton />} />
+          <Route path="/" element={<Hero />} />
+        </Route>
         <Route path="/dashboard" element={<Dashboard />} />
-      </Route>
+      </>
     )
   );
 

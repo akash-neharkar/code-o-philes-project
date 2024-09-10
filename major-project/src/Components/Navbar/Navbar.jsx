@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import logo from "../../assets/logo.png";
 import menu_icon from "../../assets/menu-icon.png";
-import { useNavigate, Link, NavLink } from 'react-router-dom';
+import { useNavigate, NavLink } from 'react-router-dom';
 import { useAuth } from '@clerk/clerk-react';
 
 const Navbar = () => {
@@ -39,19 +39,16 @@ const Navbar = () => {
 
   return (
     <nav className={`container ${sticky ? "dark-nav" : ""}`}>
-      <img src={logo} alt="" className="logo" />
+      <img src={logo} alt="logo" className="logo" />
       <ul className={mobileMenu ? "" : "hide-mobile-menu"}>
         <li>
           <a href="#" onClick={(e) => handleSmoothScroll(e, 'hero', 0)}>Home</a>
         </li>
-        {/* <li>
-         Dashboard
-        </li> */}
         {/* {isSignedIn && userId === 'user_2hDpsa04NmsUdqC86ukoY9y5FZy' && (
-        )} */}
-        <li>
-          <NavLink to="/dashboard">Dashboard</NavLink>
-        </li>
+          )} */}
+          <li>
+            <NavLink to="/dashboard">Dashboard</NavLink>
+          </li>
         <li>
           <a href="#" onClick={(e) => handleSmoothScroll(e, 'contact', 230)}>Contact</a>
         </li>
