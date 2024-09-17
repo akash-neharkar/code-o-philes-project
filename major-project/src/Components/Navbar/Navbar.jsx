@@ -8,6 +8,7 @@ import { useAuth } from '@clerk/clerk-react';
 const Navbar = () => {
   const navigate = useNavigate();
   const { isSignedIn, userId } = useAuth();
+  const authorizedUsers = ['user_2lFhgi7miSF7UcKSC2Bg58GYdFX'];
 
   console.log("isSignedIn:", isSignedIn);
   console.log("userId:", userId);
@@ -44,7 +45,7 @@ const Navbar = () => {
         <li>
           <a href="#" onClick={(e) => handleSmoothScroll(e, 'hero', 0)}>Home</a>
         </li>
-        {isSignedIn && userId === 'user_2lFhgi7miSF7UcKSC2Bg58GYdFX' && (
+        {isSignedIn && authorizedUsers.includes(userId) && (
           <li>
             <NavLink to="/dashboard">Dashboard</NavLink>
           </li>
