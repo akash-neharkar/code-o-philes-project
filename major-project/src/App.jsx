@@ -1,7 +1,8 @@
 import React from "react";
 import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route } from 'react-router-dom';
 import Layout from "./Components/Navbar/Layout";
-import SignButton from "./Components/Navbar/SignButton";
+import SignButton from "./Components/Navbar/SignButton";  
+import { ChakraProvider } from '@chakra-ui/react';
 import Dashboard from "./pages/Dashboard";
 import Hero from "./Components/Hero/Hero";
 
@@ -13,7 +14,10 @@ function App() {
           <Route index element={<SignButton />} />
           <Route path="/" element={<Hero />} />
         </Route>
-        <Route path="/dashboard" element={<Dashboard />} />
+
+        <Route path="/dashboard" element={
+          
+          <Dashboard />} />
       </>
     )
   );
