@@ -8,7 +8,7 @@ import { useAuth } from '@clerk/clerk-react';
 const Navbar = () => {
   const navigate = useNavigate();
   const { isSignedIn, userId } = useAuth();
-  const authorizedUsers = ['user_2lFhgi7miSF7UcKSC2Bg58GYdFX'];
+  const authorizedUsers = ['user_2lFhgi7miSF7UcKSC2Bg58GYdFX','user_2ltZxneRZDELjYnRIUMsWvFo5xg'];
 
   console.log("isSignedIn:", isSignedIn);
   console.log("userId:", userId);
